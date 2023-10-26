@@ -39,3 +39,14 @@ for sk in range(1, 101):
     if sk == 19:
         break
 print("")
+
+# Praleidžiame lyginius skaičius (iki vartotojo pasirinkimo), kurie dalinasi iš 9. Nebus 18 ir 36 it t.t.
+
+sustoti = int(input("Įveskite skaičių, ties kuriuo nustoti tyrinėti seką: "))
+for sk in range(1, 101):
+    if sk % 2 == 0 and sk % 9 == 0:
+        continue
+    print(sk, end=" | ")
+    if sk == sustoti:
+        break
+print("")
